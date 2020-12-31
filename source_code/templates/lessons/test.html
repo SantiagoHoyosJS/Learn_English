@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Test</h1>
+    <p>Práctica y pon a prueba tus conocimientos!</p>
+    <p>En este test se evalúan todos los temas!</p>
+    <br>
+    <p>Completa las siguientes oraciones:</p>
+    <form action="/test" method="post">
+        <p>I (present, not like)____ playing soccer.</p>
+        <input type="text" name="q1" placeholder="Answer">
+        <p>He (present, like)____ going to the cinema.</p>
+        <input type="text" name="q2" placeholder="Answer">
+        <p>They (past, be)____ sick yesterday, so they didn't go to school</p>
+        <input type="text" name="q3" placeholder="Answer">
+        <p>You will (future, be)____ a great singer, you sing very good!</p>
+        <input type="text" name="q4" placeholder="Answer">
+        <p>I (future, go)____ to California tomorrow.</p>
+        <input type="text" name="q5" placeholder="Answer">
+        <p>Emma (past, break)____ a window at school last year</p>
+        <input type="text" name="q6" placeholder="Answer">
+        <p>Peter (present, want)____ an ice-cream.</p>
+        <input type="text" name="q7" placeholder="Answer">
+        <p>Nancy (present, not love)____ Steve.</p>
+        <input type="text" name="q8" placeholder="Answer">
+        <p>Walter (present, have)____ two children.</p>
+        <input type="text" name="q9" placeholder="Answer">
+        <p>Alex (past, buy)____ a pet last week.</p>
+        <input type="text" name="q10" placeholder="Answer">
+        <input type="submit">
+    </form>
+    <br>
+    <br>
+    <a href="/">Inicio</a>
+{% endblock %}

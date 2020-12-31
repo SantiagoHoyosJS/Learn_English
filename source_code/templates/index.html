@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Learn English</h1>
+    <br>
+    <p>Bienvenido a Learn English, el mejor sitio web para aprender Inglés.</p>
+    <br>
+    <p>Podrás crear tu propia cuenta y competir con amigos!!!</p>
+    <p>Pero recuerda: lo más importante no es qué tanto avances respecto a tus amigos, sino respecto a ti mismo en el pasado.</p>
+    <br>
+    <h3>Start right now!!!</h3>
+    <p>(Inicia ya mismo)</p>
+
+    {% if logged_in == False %}
+        <p>Inicia sesión para empezar a aprender, sino tienes una cuenta registrate:</p>
+        <a href="/sign_up">Sign up</a>
+        <br>
+        <a href="/login">Login</a>
+    {% else %}
+        <p>Sesión iniciada!!!</p>
+        <br>
+        <a href="/lessons">Lecciones</a>
+        <br>
+        <a href="/session_end">Finalizar sesión</a>
+    {% endif %}
+{% endblock %}

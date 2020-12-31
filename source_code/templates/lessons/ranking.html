@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+   <h1>Ranking</h1>
+   <p>Compite y aprende junto a tus amigos!!!</p>
+   {% for i in range(0, len_ranking) %}
+       <li>{{ ranking[i]["name"] }}: {{ ranking[i]["max_score"] }}</li>
+   {% endfor %}
+{% endblock %}

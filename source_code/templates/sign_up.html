@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block style %}
+   body
+   {
+       text-align: center;
+   }
+{% endblock %}
+
+{% block body %}
+    <h1>Sing up</h1>
+    <p>Registrate:</p>
+    <br>
+    <form action="/sign_up" method="post">
+        <input type="text" name="name" placeholder="Nombre">
+        <input type="text" name="password" placeholder="Contraseña">
+        <input type="submit">
+    </form>
+    <p><strong>Después de registrarte debes iniciar sesión para acceder a las lecciones.</strong></p>
+{% endblock %}
